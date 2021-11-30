@@ -260,6 +260,10 @@ public class LispishParser
             state = next;
 
         }
+		
+		if (next != 0) {
+			throw new Exception();
+		}
 
         return result;
     }
